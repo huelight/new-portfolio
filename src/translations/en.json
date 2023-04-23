@@ -1,0 +1,15 @@
+{
+  "landing":{
+    "i-am" : "I'm a Web Developer",
+    "i-do" : "Graphic Designer",
+    "motto" : "Creativity at its peak"
+  },
+
+  "about":{
+  "my-brand": "My goal is to create visually stunning websites that not only look great but also provide an intuitive user experience. I believe that simplicity is the key to achieving this, and I strive to ensure that every design element serves a purpose and enhances the user's experience. Working with me means working with someone who is committed to bringing your ideas to life in a way that is beautiful, functional, and user-friendly. Whether you need a new website, a redesign, or ongoing maintenance and support, I am dedicated to providing high-quality services that exceed your expectations.",
+  "current-location": "Aachen, Germany",
+  "my-availability": "open for work and collaboration"
+}
+
+
+}
