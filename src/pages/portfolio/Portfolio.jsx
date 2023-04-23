@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import projectData from "./projectsData.json";
 import Project from "../../components/Project";
 import PageHeader from "../../components/PageHeader";
@@ -6,24 +6,33 @@ import PROJECT_DATA from "./project-data";
 
 const Portfolio = () => {
   const [category, setCategory] = useState("web");
-  const filteredProjects = PROJECT_DATA.filter((project) => project.heading === category);
-  console.log(filteredProjects)
+  const filteredProjects = PROJECT_DATA.filter((project) => project.heading === category)[0];
 
-  const ProjectList = () =>
-    filteredProjects.map((project, i) => (
-      // <Project
-      //   key={i}
-      //   id={project.id}
-      //   title={project.title}
-      //   technologies={project.technologies}
-      //   image={project.image}
-      //   color={project.bgcolor}
-      //   github={project.github}
-      //   deployed={project.deployed}
-      //   description={project.description}
-      // />
-      JSON.stringify(project)
-    ));
+  useEffect(() => {
+
+  }, [])
+
+  const ProjectList = () => {
+    return (
+      <>
+        {
+          filteredProjects.data.map((project, idx) => (
+            <Project
+              key={idx}
+              id={project.id}
+              title={project.title}
+              technologies={project.technologies}
+              image={project.image}
+              color={project.bgcolor}
+              github={project.github}
+              deployed={project.deployed}
+              description={project.description}
+            />
+          ))
+        }
+      </>
+    )
+  }
 
   return (
     <section className="portfolio">
