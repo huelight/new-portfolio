@@ -56,7 +56,7 @@ const PROJECT_DATA = [
         ]
     },
     {
-        heading: 'ui/ux',
+        heading: 'Ui_UX',
         data: [
             {
 
