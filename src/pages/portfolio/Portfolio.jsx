@@ -3,20 +3,27 @@ import projectData from "./projectsData.json";
 import Project from "../../components/Project";
 import PageHeader from "../../components/PageHeader";
 import PROJECT_DATA from "./project-data";
+import { getCategoriesAndDocuments } from "../../utils/firebase/firebase";
 
 const Portfolio = () => {
   const [category, setCategory] = useState("web");
-  const filteredProjects = PROJECT_DATA.filter((project) => project.heading === category)[0];
+  const [categoriesMap, setCategoriesMap] = useState({});
+  
 
   useEffect(() => {
+    const getCategoriesMap = async () => {
+      const categoryMap = await getCategoriesAndDocuments();
+      setCategoriesMap(categoryMap)
+    }
+    getCategoriesMap();
+  }, []);
 
-  }, [])
 
   const ProjectList = () => {
     return (
       <>
         {
-          filteredProjects.data.map((project, idx) => (
+          categoriesMap[category]?.map((project, idx) => (
             <Project
               key={idx}
               id={project.id}
@@ -52,7 +59,7 @@ const Portfolio = () => {
         </button>
         <button
           className={category === "ui/ux" ? "active" : ""}
-          onClick={() => setCategory("ui/ux")}
+          onClick={() => setCategory("Ui_UX")}
         >
           UI/UX
         </button>
