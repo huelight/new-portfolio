@@ -14,7 +14,6 @@ const Portfolio = () => {
     const getCategoriesMap = async () => {
       const categoryMap = await getCategoriesAndDocuments();
       setCategoriesMap(categoryMap)
-      console.log(categoriesMap)
     }
     getCategoriesMap();
   }, []);
