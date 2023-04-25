@@ -5,7 +5,16 @@
     "motto" : "Kreativität auf dem Höhepunkt"
   },
 
-  "about": {"my-brand": "Mein Ziel ist es, visuell beeindruckende Websites zu erstellen, die nicht nur gut aussehen, sondern auch eine intuitive Benutzererfahrung bieten. Ich glaube, dass Einfachheit der Schlüssel dazu ist, und ich bemühe mich sicherzustellen, dass jedes Designelement einem Zweck dient und die Erfahrung des Benutzers verbessert. Mit mir zu arbeiten bedeutet, mit jemandem zusammenzuarbeiten, der sich dafür einsetzt, Ihre Ideen auf eine schöne, funktionale und benutzerfreundliche Weise zum Leben zu erwecken. Egal, ob Sie eine neue Website, ein Redesign oder laufende Wartung und Unterstützung benötigen, ich bin bestrebt, qualitativ hochwertige Dienstleistungen anzubieten, die Ihre Erwartungen übertreffen.",
+  "about": {
+    "let_me": "Lassen Sie mich Ihnen vorstellen",
+    "meme": "Über mich",
+    "greeting": "Freut mich, Sie kennenzulernen",
+    "motto": "Außergewöhnliche digitale Erlebnisse zu schaffen, ist das, was ich am besten kann - ich bin ein Frontend-Webentwickler!",
+    "btn_text": "Lebenslauf herunterladen",
+    "t_name": "Name:",
+    "avail": "Verfügbarkeit:",
+    "t_location": "Standort:",
+    "my-brand": "Mein Ziel ist es, visuell beeindruckende Websites zu erstellen, die nicht nur gut aussehen, sondern auch eine intuitive Benutzererfahrung bieten. Ich glaube, dass Einfachheit der Schlüssel dazu ist, und ich bemühe mich sicherzustellen, dass jedes Designelement einem Zweck dient und die Erfahrung des Benutzers verbessert. Mit mir zu arbeiten bedeutet, mit jemandem zusammenzuarbeiten, der sich dafür einsetzt, Ihre Ideen auf eine schöne, funktionale und benutzerfreundliche Weise zum Leben zu erwecken. Egal, ob Sie eine neue Website, ein Redesign oder laufende Wartung und Unterstützung benötigen, ich bin bestrebt, qualitativ hochwertige Dienstleistungen anzubieten, die Ihre Erwartungen übertreffen.",
   "current-location": "Aachen, Deutschland",
   "my-availability": "offen für Arbeit und Zusammenarbeit"}
 }

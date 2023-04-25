@@ -58,8 +58,8 @@ const Portfolio = () => {
           Graphics
         </button>
         <button
-          className={category === "ui/ux" ? "active" : ""}
-          onClick={() => setCategory("Ui_UX")}
+          className={category === "ui-ux" ? "active" : ""}
+          onClick={() => setCategory("ui-ux")}
         >
           UI/UX
         </button>
