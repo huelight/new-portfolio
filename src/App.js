@@ -9,9 +9,17 @@ initializeI18n();
 
 const App = () => {
   const { t } = useTranslation();
-  
+
   const personalDetails = {
     name: "Daniel Aiyelu",
+    let_me: t('about.let_me'),
+    meme: t('about.meme'),
+    greeting: t('about.greeting'),
+    motto: t('about.motto'),
+    btn_text: t('about.btn_text'),
+    t_name: t('about.t_name'),
+    t_location: t('about.t_location'),
+    avail: t('about.avail'),
     location: t('about.current-location'),
     email: "aiyeludaniel@gmail.com",
     availability: t('about.my-availability'),
@@ -22,10 +30,10 @@ const App = () => {
 
   return (
     <>
-    <I18nextProvider i18n={i18n}>
-      <Header />
+      <I18nextProvider i18n={i18n}>
+        <Header />
         <AnimatedRoutes personalDetails={personalDetails} />
-    </I18nextProvider>
+      </I18nextProvider>
     </>
   );
 }

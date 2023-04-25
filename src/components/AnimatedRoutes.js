@@ -15,11 +15,19 @@ const AnimatedRoutes = ({ personalDetails }) => {
         path="/about"
         element={
           <About
-            name={personalDetails.name}
-            location={personalDetails.location}
-            email={personalDetails.email}
-            availability={personalDetails.availability}
-            brand={personalDetails.brand}
+      let_me= {personalDetails.let_me}
+      meme= {personalDetails.meme}
+      greeting= {personalDetails.greeting}
+      motto= {personalDetails.motto}
+      btn_text= {personalDetails.btn_text}
+      t_name= {personalDetails.t_name}
+      t_location= {personalDetails.t_location}
+      avail= {personalDetails.avail}
+      name={personalDetails.name}
+      location={personalDetails.location}
+      email={personalDetails.email}
+      availability={personalDetails.availability}
+      brand={personalDetails.brand}
           />
         }
       />
