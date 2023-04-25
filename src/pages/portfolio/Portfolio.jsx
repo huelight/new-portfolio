@@ -13,19 +13,18 @@ const Portfolio = () => {
   useEffect(() => {
     const getCategoriesMap = async () => {
       const categoryMap = await getCategoriesAndDocuments();
-      console.log(categoryMap)
+      setCategoriesMap(categoryMap)
+      console.log(categoriesMap)
     }
     getCategoriesMap();
-   
   }, []);
 
 
   const ProjectList = () => {
-    const filteredProjects = PROJECT_DATA.filter((project) => project.heading === category)[0];
     return (
       <>
         {
-          filteredProjects.data.map((project, idx) => (
+          categoriesMap[category]?.map((project, idx) => (
             <Project
               key={idx}
               id={project.id}
