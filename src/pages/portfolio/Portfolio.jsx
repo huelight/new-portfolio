@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
-import projectData from "./projectsData.json";
 import Project from "../../components/Project";
 import PageHeader from "../../components/PageHeader";
-import PROJECT_DATA from "./project-data";
 import { getCategoriesAndDocuments } from "../../utils/firebase/firebase";
 
 const Portfolio = () => {
