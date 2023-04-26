@@ -4,7 +4,9 @@ import { signInWithGooglePopup, createUserDocumentFromAuth } from "../../utils/f
 const Login = () => {
     const logGoogleUser = async () => {
         const {user} = await signInWithGooglePopup();
-       const userDocRef = await createUserDocumentFromAuth(user)
+        // eslint-disable-next-line
+        const userDocRef = await createUserDocumentFromAuth(user)
+        
     }
     return (
         <div>
